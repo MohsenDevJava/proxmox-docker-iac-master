@@ -13,12 +13,9 @@ jobs:
         config:
           - { host: '192.168.2.121', stack_name: 'uptime-kuma' }
           - { host: '192.168.2.121', stack_name: 'watchtower' }
-          - { host: '192.168.2.149', stack_name: 'watchtower' }
+          
           - { host: '192.168.2.121', stack_name: 'n8n-cloudflared' }
-          - { host: '192.168.2.121', stack_name: 'vaultwarden' }
-          - { host: '192.168.2.121', stack_name: 'torrent' }
-          - { host: '192.168.2.121', stack_name: 'cadvisor' }
-          - { host: '192.168.2.122', stack_name: 'cadvisor' }
+          
 
     env:
       DOCKER_HOST: tcp://${{ matrix.config.host }}:2375
