@@ -13,6 +13,7 @@ jobs:
         config:
           - { host: '188.165.11.93', stack_name: 'uptime-kuma' }
           - { host: '188.165.11.93', stack_name: 'watchtower' }
+          
           - { host: '188.165.11.93', stack_name: 'n8n-cloudflared' }
           
 
