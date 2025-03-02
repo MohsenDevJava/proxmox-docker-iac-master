@@ -11,9 +11,9 @@ jobs:
     strategy:
       matrix:
         config:
-          - { host: '192.168.2.121', stack_name: 'uptime-kuma' }
-          - { host: '192.168.2.121', stack_name: 'watchtower' }
-          - { host: '192.168.2.121', stack_name: 'n8n-cloudflared' }
+          - { host: '188.165.11.93', stack_name: 'uptime-kuma' }
+          - { host: '188.165.11.93', stack_name: 'watchtower' }
+          - { host: '188.165.11.93', stack_name: 'n8n-cloudflared' }
           
 
     env:
