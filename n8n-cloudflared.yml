@@ -20,7 +20,7 @@ services:
       - N8N_PROTOCOL=https
       - NODE_ENV=production
       - WEBHOOK_URL=https://msn8n.ip-ddns.com
-      - GENERIC_TIMEZONE=Europe/Berlin
+      - GENERIC_TIMEZONE=Europe/Moscow
       - N8N_DIAGNOSTICS_ENABLED=false
     volumes:
       - n8n_data:/home/node/.n8n
@@ -31,7 +31,7 @@ services:
     networks:
       - n8n-network
     environment:
-      TZ: Europe/Berlin
+      TZ: Europe/Moscow
     command:
       [
         "tunnel",
